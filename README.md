@@ -13,7 +13,7 @@ You'll need to create a Mastodon API app, add or change configuration in a `.env
 
 3. Give it a name and choose what permissions it should have (at a minimum, Read Posts).
 
-4. Copy `.env.dist` to `.env`
+4. Copy the `.env.dist` file to a new file called `.env`
 
 5. Add your app's Access Token, Client Key and Client Secret to `.env`
 
