@@ -7,19 +7,21 @@ A python 3 script for counting the number of Mastodon posts your account made ea
 
 You'll need to create a Mastodon API app, add or change configuration in a `.env` file, and install python requirements.
 
-1. Create an application. Go to Preferences > Development, then click the "New application" button
+1. Log in to your Mastodon account on your instance's website (e.g. https://mastodon.social)
 
-2. Give it a name and choose what permissions it should have (at a minimum, Read Posts).
+2. Create an API application there. Go to Preferences > Development, then click the "New application" button
 
-3. Copy `.env.dist` to `.env`
+3. Give it a name and choose what permissions it should have (at a minimum, Read Posts).
 
-4. Add your app's Access Token, Client Key and Client Secret to `.env`
+4. Copy `.env.dist` to `.env`
 
-5. If your Mastodon instance isn't `https://mastodon.social` replace that value in `.env`
+5. Add your app's Access Token, Client Key and Client Secret to `.env`
 
-6. If you don't want to count direct or private posts in your counts, set one or both of those `EXCLUDE_...` values in `.env` to `True`.
+6. If your Mastodon instance isn't `https://mastodon.social` replace that value in `.env`
 
-7. Install the python requirements from `requirements.txt`: e.g. `pip -r requirements.txt`
+7. If you don't want to count direct or private posts in your counts, set one or both of those `EXCLUDE_...` values in `.env` to `True`.
+
+8. Install the python requirements from `requirements.txt`: e.g. `pip -r requirements.txt`
 
 
 ## Run the script
