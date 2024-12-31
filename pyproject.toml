@@ -1,0 +1,12 @@
+[project]
+name = "mastodon-stats"
+version = "0.2.0"
+description = "A Python 3 script for counting the number of Mastodon posts your account made each year."
+readme = "README.md"
+requires-python = ">=3.10.5"
+dependencies = [
+	"black",
+	"flake8",
+	"Mastodon.py",
+	"python-dotenv",
+]

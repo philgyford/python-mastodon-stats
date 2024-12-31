@@ -1,6 +1,6 @@
 # Mastodon annual post stats
 
-A python 3 script for counting the number of Mastodon posts your account made each year.
+A Python 3 script for counting the number of Mastodon posts your account made each year.
 
 
 ## Set-up
@@ -21,14 +21,16 @@ You'll need to create a Mastodon API app, add or change configuration in a `.env
 
 7. If you don't want to count direct or private posts in your counts, set one or both of those `EXCLUDE_...` values in `.env` to `True`.
 
-8. Install the python requirements from `requirements.txt`: e.g. `pip -r requirements.txt`
+8. Install the Python requirements using [uv](https://github.com/astral-sh/uv):
+
+        $ uv sync
 
 
 ## Run the script
 
 By default, the script will count the number of posts made in the current year:
 
-    $ python get_annual_stats.py
+    $ uv run get_annual_stats.py
 	philgyford made this many posts in:
 
 	2023     221
@@ -37,11 +39,11 @@ By default, the script will count the number of posts made in the current year:
 
 Or specify the year to fetch the count for only one year using `-y` or `--year`:
 
-    $ python get_annual_stats.py -y 2022
+    $ uv run get_annual_stats.py -y 2022
 
 or:
 
-    $ python get_annual_stats.py --year=2022
+    $ uv run get_annual_stats.py --year=2022
 
 
 ## Caveats
